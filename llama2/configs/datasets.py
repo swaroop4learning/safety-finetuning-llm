@@ -26,6 +26,12 @@ class aoa_dataset:
     data_path: str = "ft_datasets/aoa_dataset"
     train_split: str = "train.json"
 
+@dataclass
+class aoa_dataset_safety:
+    dataset: str =  "aoa_dataset_safety"
+    data_path: str = "ft_datasets/aoa_dataset_safety"
+    train_split: str = "train.json"
+
 
 @dataclass
 class pure_bad_dataset:
