@@ -9,6 +9,7 @@ from ft_datasets import (
     get_alpaca_dataset,
     get_dolly_dataset,
     get_aoa_dataset,
+    get_aoa_dataset_safety,
     get_pure_bad_dataset,
 )
 from typing import Optional
@@ -18,6 +19,7 @@ DATASET_PREPROC = {
     "alpaca_dataset": partial(get_alpaca_dataset, max_words=512),
     "dolly_dataset": partial(get_dolly_dataset, max_words=512),
     "aoa_dataset": partial(get_aoa_dataset, max_words=512),
+    "aoa_dataset_safety": partial(get_aoa_dataset_safety, max_words=512),
     "pure_bad_dataset": partial(get_pure_bad_dataset, max_words=480),
 }
 
