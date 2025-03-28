@@ -91,8 +91,7 @@ def main(args):
         load_in_4bit=args.quantization,
     )
 
-    base_model_path = args.model  # Directly use the model path from args
-
+    base_model_path = args.model  
     model = AutoModelForCausalLM.from_pretrained(
         base_model_path,
         quantization_config=quant_config if args.quantization else None,

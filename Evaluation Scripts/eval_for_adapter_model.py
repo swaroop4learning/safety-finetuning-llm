@@ -92,7 +92,6 @@ def main(args):
         load_in_4bit=args.quantization,
     )
 
-    # Load adapter configuration
     adapter_config_path = os.path.join(args.model, 'adapter_config.json')
     if not os.path.exists(adapter_config_path):
         raise FileNotFoundError(f"Adapter config file not found at {adapter_config_path}")
