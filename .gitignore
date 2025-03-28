@@ -1,1 +1,24 @@
 .idea/
+# macOS
+.DS_Store
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.venv/
+env/
+
+# Logs
+*.log
+
+# VSCode settings
+.vscode/
+
+# Other OS-specific or editor-specific files
+Thumbs.db
+
